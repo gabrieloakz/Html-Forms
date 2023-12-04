@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTML Forms</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form action="status.html" method="get">
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" />
+      </div>
+
+      <div>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" />
+      </div>
+
+      <div>
+        <label for="mail">E-mail:</label>
+        <!-- Adicione o atributo pattern para validar o formato do e-mail -->
+        <input type="email" id="mail" name="mail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
+        <small>Formato válido: exemplo@dominio.com</small>
+      </div>
+
+      <div>
+        <label for="Data">Nascimento:</label>
+        <input type="date" id="Data" />
+      </div>
+
+      <div>
+        <label for="msg">Mensagem:</label>
+        <textarea id="msg" name="msg"></textarea>
+      </div>
+
+      <div class="button">
+        <button type="submit">Enviar sua mensagem</button>
+      </div>
+    </form>
+  </body>
+</html>
